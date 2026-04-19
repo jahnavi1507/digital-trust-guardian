@@ -7,3 +7,10 @@ function checkMsg() {
     alert("✅ Safe message");
   }
 }
+data: [
+  Math.floor(Math.random()*10),
+  Math.floor(Math.random()*10),
+  Math.floor(Math.random()*10),
+  Math.floor(Math.random()*10),
+  Math.floor(Math.random()*10)
+]
