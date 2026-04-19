@@ -1,4 +1,99 @@
 body {
-  font-family: Arial;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #020617;
+}
+
+.btn {
+  background: #3b82f6;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.hero {
   text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-box button {
+  background: #3b82f6;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.checker {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.checker input {
+  padding: 10px;
+  width: 250px;
+}
+
+.checker button {
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
 }
