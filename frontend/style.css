@@ -360,3 +360,49 @@ body {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
 }
+/* Full screen center */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bigger login box */
+.login-box {
+  width: 350px;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #2563eb;
+  box-shadow: 0 0 10px #3b82f6;
+}
