@@ -341,3 +341,22 @@ body {
 .btn:hover {
   box-shadow: 0 0 15px #3b82f6;
 }
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+body {
+  background: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+body {
+  background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+.card, .login-box, .checker-box {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}

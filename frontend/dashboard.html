@@ -85,11 +85,12 @@ function checkMsg(){
 
   if(msg.includes("OTP") || msg.includes("loan") || msg.includes("bank") || msg.includes("urgent")){
     alert("⚠️ Scam detected!");
+    speakAlert("Warning! This message may be a scam");
   } else {
-    alert("✅ Safe message");
+    alert("Safe message");
+    speakAlert("This message is safe");
   }
 }
-
 /* 📊 BAR CHART */
 new Chart(document.getElementById("barChart"), {
   type: "bar",
@@ -115,6 +116,14 @@ new Chart(document.getElementById("pieChart"), {
 setInterval(() => {
   console.log("⚠️ New Scam Alert Detected");
 }, 10000);
+function speakAlert(text) {
+  let speech = new SpeechSynthesisUtterance(text);
+  speech.lang = "en-IN"; // Indian voice
+  speech.rate = 1;
+  speech.pitch = 1;
+
+  window.speechSynthesis.speak(speech);
+}
 </script>
 
 </body>
