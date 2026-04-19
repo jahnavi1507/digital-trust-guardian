@@ -3,6 +3,9 @@
 <head>
   <title>Dashboard</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -19,10 +22,9 @@
     </ul>
   </div>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <div class="main">
 
-    <!-- Navbar -->
     <div class="navbar">
       <h2>Dashboard</h2>
       <p>Welcome, Admin</p>
@@ -46,7 +48,18 @@
       </div>
     </div>
 
-    <!-- Message Checker -->
+    <!-- Charts Section -->
+    <div class="charts">
+      <div class="chart-box">
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Checker -->
     <div class="checker-box">
       <h3>Check Message</h3>
       <input id="msg" placeholder="Enter message">
@@ -76,6 +89,29 @@ function checkMsg(){
     alert("✅ Safe message");
   }
 }
+
+/* 📊 BAR CHART */
+new Chart(document.getElementById("barChart"), {
+  type: "bar",
+  data: {
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    datasets: [{
+      label: "Fraud Alerts",
+      data: [2, 5, 3, 6, 4]
+    }]
+  }
+});
+
+/* 🥧 PIE CHART */
+new Chart(document.getElementById("pieChart"), {
+  type: "pie",
+  data: {
+    labels: ["Safe", "Suspicious", "Fraud"],
+    datasets: [{
+      data: [60, 25, 15]
+    }]
+  }
+});
 </script>
 
 </body>
