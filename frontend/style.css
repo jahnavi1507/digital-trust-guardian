@@ -199,3 +199,22 @@ footer {
   margin-top: 20px;
   color: #3b82f6;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  background: #3b82f6;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
