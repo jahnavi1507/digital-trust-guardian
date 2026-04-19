@@ -218,3 +218,126 @@ footer {
   text-align: center;
   padding: 80px 20px;
 }
+/* Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: rgba(59,130,246,0.8);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Glass Cards */
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Feature Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px;
+}
+
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+
+  /* Glass effect */
+  backdrop-filter: blur(10px);
+
+  /* Animation */
+  transition: 0.3s;
+}
+
+/* Hover animation */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: #3b82f6;
+}
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero, .card {
+  animation: fadeIn 1s ease-in-out;
+}
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+}
+.btn {
+  background: #3b82f6;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px #3b82f6;
+}
