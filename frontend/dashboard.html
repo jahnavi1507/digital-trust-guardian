@@ -6,34 +6,55 @@
 </head>
 <body>
 
-<header>
-  <h2>Dashboard</h2>
-  <button onclick="logout()" class="btn">Logout</button>
-</header>
+<div class="container">
 
-<div class="dashboard">
-
-  <div class="card">
-    <h3>⚠️ Threat Alerts</h3>
-    <p id="alerts">3 Suspicious Messages</p>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>DTG</h2>
+    <ul>
+      <li>🏠 Dashboard</li>
+      <li>⚠️ Alerts</li>
+      <li>📊 Analytics</li>
+      <li onclick="logout()">🚪 Logout</li>
+    </ul>
   </div>
 
-  <div class="card">
-    <h3>📊 Risk Level</h3>
-    <p>Medium</p>
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <h2>Dashboard</h2>
+      <p>Welcome, Admin</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <h3>⚠️ Threat Alerts</h3>
+        <p>5 Active</p>
+      </div>
+
+      <div class="card">
+        <h3>📊 Risk Level</h3>
+        <p>Medium</p>
+      </div>
+
+      <div class="card">
+        <h3>👥 Reports</h3>
+        <p>18 Reports</p>
+      </div>
+    </div>
+
+    <!-- Message Checker -->
+    <div class="checker-box">
+      <h3>Check Message</h3>
+      <input id="msg" placeholder="Enter message">
+      <button onclick="checkMsg()">Analyze</button>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h3>👥 Community Reports</h3>
-    <p>12 Reports</p>
-  </div>
-
-</div>
-
-<div class="checker">
-  <h3>Check Message</h3>
-  <input id="msg" placeholder="Enter message">
-  <button onclick="checkMsg()">Check</button>
 </div>
 
 <script>

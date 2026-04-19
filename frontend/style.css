@@ -97,3 +97,82 @@ footer {
   border: none;
   color: white;
 }
+/* Layout */
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #020617;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #3b82f6;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+  background: #1e293b;
+  border-radius: 5px;
+}
+
+.sidebar li:hover {
+  background: #3b82f6;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Checker */
+.checker-box {
+  margin-top: 40px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.checker-box input {
+  padding: 10px;
+  width: 60%;
+}
+
+.checker-box button {
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+}
